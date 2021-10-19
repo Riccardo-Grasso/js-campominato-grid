@@ -16,28 +16,39 @@
     <header>
         <nav class="container-fluid">
             <div class="row my-3 align-items-center">
-                <div class="col-6">
-                    <h1>Campo Minato: La Griglia</h1>
+                <div class="col-6 d-flex align-items-center">
+                    <img src="img/Logo.png" alt="boolean-logo" class="me-3">
+                    <h1 class="fw-bolder">Campo Minato: la Griglia</h1>
                 </div>
 
                 <div class="col-6 d-flex align-items-center justify-content-end">
                     <label for="select-difficolta" class="pe-3 fw-bold">Difficoltà: </label>
-                    <select class="form-select w-25" id="select-difficolta" aria-label="Floating label select example">
-                        <option value="facile">Facile</option>
-                        <option value="medio">Medio</option>
+                    <select class="form-select w-25 my-nav-color" id="select-difficolta"
+                        aria-label="Floating label select example">
+                        <option value="facile" selected="selected">Facile</option>
+                        <option value="media">Media</option>
                         <option value="difficile">Difficile</option>
                     </select>
 
-                    <button type="button" class="btn btn-primary mx-3">Play</button>
+                    <button type="button" id="button-play" class="btn btn-primary my-nav-color mx-3">Play</button>
                 </div>
             </div>
         </nav>
     </header>
 
 
-    <main>
-        <div class="container"></div>
+    <main class="my-3">
+        <div class="container p-5">
+            <div id="container-griglia" class="d-flex flex-wrap mx-auto"></div>
+        </div>
     </main>
+
+    <footer>
+        <div class="container-fluid">
+            <h5>Made with &#10084; by <a href="#">Boolean</a></h5>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
