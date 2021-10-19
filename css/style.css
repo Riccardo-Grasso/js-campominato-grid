@@ -39,6 +39,13 @@ main {
     box-shadow: 0 0 0 0.25rem rgba(174, 255, 228, .6);
 }
 
+.btn-primary:focus {
+    border-color: #55c09c;
+    outline: 0;
+    background-color: #69ddb7;
+    box-shadow: 0 0 0 0.25rem rgba(174, 255, 228, .6);
+}
+
 .btn-primary{
     color: black;
 }
