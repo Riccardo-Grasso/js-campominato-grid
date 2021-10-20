@@ -2,9 +2,14 @@ main {
     background-color: #7FFFD4;
 }
 
+.d-none-container {
+    opacity: 0;
+}
+
 #container-griglia {
     width: 500px;
     height: 500px;
+    box-shadow: 10px 10px 10px #a2adc0;
 }
 
 #container-griglia .box {

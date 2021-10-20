@@ -2,10 +2,14 @@
 const difficoltaSelezionata = document.getElementById("select-difficolta");
 const btnPlay = document.getElementById("button-play");
 const containerGriglia = document.getElementById("container-griglia");
+const hiddenContainer = document.getElementById("hidden-container");
 
 
 //Cosa succede quando clicco sul pulsante?
 btnPlay.addEventListener("click", function () {
+
+    hiddenContainer.classList.remove("d-none-container");
+
     //prendo la difficoltà dal form
     const difficolta = difficoltaSelezionata.value;
 
